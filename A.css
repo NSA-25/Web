@@ -1,0 +1,203 @@
+@media screen and (max-width: 800px){
+    article {
+        display: none;
+    }
+}
+@media screen and (max-width: 400px){
+    article{
+        display: none;
+    }
+    #notite{
+        display:none;
+    }
+    #comentariu{
+        display:none;
+    }
+}
+body{
+    background: radial-gradient(circle, rgba(240,226,10,1) 8%, rgba(246,11,11,1) 100%);
+}
+header{
+    animation: stod 30s linear infinite;
+    position: absolute;
+    top: 0;
+    color: white;
+}
+.sterge{
+    background-color: crimson;
+}
+#notebut{
+    width:300px;
+    height:35px;
+    background-color: #3b9bf5;
+    float:right;
+    margin-right:50px;
+}
+#comentariu{
+    float:right;
+    position:relative;
+    margin-top:40px;
+    margin-right:-300px;
+    width:294px;
+    height:200px;
+}
+em{
+    position:relative;
+    float:left;
+    margin-top:-700px;
+    margin-left:-300px;
+    font-size: 30px;
+}
+.bara{
+    top: 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffa781;
+    color: #5b0e2d;
+    position:relative;
+    margin-bottom: 20px;
+}
+.bara li{
+    display: block;
+    padding: 10px;
+}
+#fundal{
+    width:250px;
+}
+@keyframes stod {
+    0% {
+        left: 0;
+        color:greenyellow;
+    }
+    50% {
+        left: 85%;
+        color: sandybrown;
+    }
+    100% {
+        left: 0;
+        color: yellowgreen;
+    }
+}
+.calculator{
+    margin-left:300px;
+    display: grid;
+    position: relative;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    grid-template-areas:
+"a a a a"
+"b b b b"
+"b b b b"
+"b b b b"
+"b b b b"
+"c c c c";
+}
+.calculator #main{
+    grid-area: a;
+    border: 1px solid blue;
+    width: 313px;
+    height: 75px;
+    text-align: right;
+    font-size: 60px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background: black;
+    color: antiquewhite;
+}
+.calculator .but{
+    grid-area: b;
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    margin-top: 5px;
+    grid-gap: 5px;
+}
+.calculator .but > input {
+    width: 75px;
+    height: 50px;
+    background: lightblue;
+}
+.calculator #sterge{
+    grid-area: c;
+    display: grid;
+    margin-top: 5px;
+    grid-gap: 5px;
+    background: red;
+
+}
+.calculator #sterge > input{
+    width: 315px;
+    height: 75px;
+    background: red;
+    text-align: center;
+}
+@keyframes apare{
+    from{
+        left:-1000px
+    }
+    to{
+        left:200px
+    }
+}
+article{
+    animation: apare 5s;
+    text-align: center;
+    position: relative;
+}
+.ophead::before{
+    content:"!";
+    position:relative;
+    font-size:40px;
+    color:darkred;
+}
+.ophead::after{
+    content:"!";
+    position:relative;
+    font-size:40px;
+    color:yellow;
+}
+article p{
+    font-size: 20px
+}
+#menu {
+    position: relative;
+    display: inline-block;
+    margin-top: 100px;
+    margin-left:30px;
+}
+#wikib {
+    text-align: center;
+    background-color: #4c75af;
+    color: yellow;
+    width: 200px;
+    height: 175px;
+    cursor: pointer;
+}
+#drop {
+    display: none;
+    background-color: darkcyan;
+    width: 200px;
+    float: right;
+}
+#drop a{
+    position: relative;
+    color: black;
+    padding: 12px 15px;
+    text-decoration: none;
+    display: block;
+    border: 1px solid black;
+    height: 24px;
+}
+#menu:hover #drop, #menu:active #drop {
+    display: block;
+}
+#wikib:hover, #wikib:active{
+    background-color: darkblue;
+    color: darkred;
+    width: 250px;
+    height: 200px;
+}
+#drop a:nth-of-type(even)
+{
+    background-color:yellow;
+}

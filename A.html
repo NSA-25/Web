@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="A.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header>Un calculator cu operații de bază.</header>
+<nav>
+    <ul class="bara">
+        <li><button id="fundal">Fundal: </button></li>
+        <li>
+            <label for="night">Fundal alternativ?:</label> <input id="night" type="checkbox"></li>
+    </ul>
+</nav>
+<button id="notebut">Creeaza o notita</button>
+<label for="comentariu"></label><textarea id="comentariu"></textarea>
+<main class="calculator">
+    <em id="mesaj">Treci peste limite!</em>
+    <label for="main"></label><input id="main" type = "text" readonly placeholder = "Calculează!">
+    <form class="but">
+        <input class="val" type = "button" value = "1">
+        <input class="val" type = "button" value = "2">
+        <input class="val" type = "button" value = "3">
+        <input class="val" type = "button" value = "+">
+        <input class="val" type = "button" value = "4">
+        <input class="val" type = "button" value = "5">
+        <input class="val" type = "button" value = "6">
+        <input class="val" type = "button" value = "-">
+        <input class="val" type = "button" value = "7">
+        <input class="val" type = "button" value = "8">
+        <input class="val" type = "button" value = "9">
+        <input class="val" type = "button" value = "*">
+        <input class="val" type = "button" value = "0">
+        <input class="val" type = "button" id ="pct" value = ".">
+        <input class="eg" type = "button" id = "egal" value = "=">
+        <input class="val" type = "button" value = "/">
+    </form>
+    <div id="sterge">
+        <input class="st" type = "reset" value = "Sterge">
+    </div>
+</main>
+<section class="opcontainer">
+    <h2>Informații utile:</h2>
+    <article>
+        <h2 class="ophead">Adunarea</h2>
+        <p class="opinfo">Adunarea (de obicei reprezentată de simbolul plus +) este una dintre cele patru operații de bază ale aritmeticii, celelalte trei fiind scăderea, înmulțirea și împărțirea. Adunarea a două numere întregi are ca rezultat suma totală sau suma acelor valori combinate. De exemplu 2 + 2 = 4.</p>
+    </article>
+    <article>
+        <h2 class="ophead">Scăderea</h2>
+        <p class="opinfo">Scăderea este o operație aritmetică care reprezintă operația de eliminare a obiectelor dintr-o colecție. Scăderea este reprezentată de simbolul minus, -. De exemplu, din 5 - 2 eliminăm 2 din 5 și rămâne 3.</p>
+    </article>
+    <article>
+        <h2 class="ophead">Înmulțirea</h2>
+        <p class="opinfo">Înmulțirea, una dintre cele patru operații de bază ale aritmeticii, dă rezultatul combinării grupurilor de dimensiuni egale. Cu alte cuvinte, multiplicarea este adunare repetată(cel puțin în cazul numerelor întregi).</p>
+    </article>
+    <article>
+        <h2 class="ophead">Împărțirea</h2>
+        <p class="opinfo">Împărțirea este o metodă de distribuire a unui grup de lucruri în părți egale. Împărțirea este o operație inversă multiplicării. Dacă 3 grupe de câte 4 fac 12 în înmulțire; 12 împărțiți în 3 grupe egale dau câte 4 în fiecare grup în împărțire.</p>
+    </article>
+</section>
+<footer id="menu">
+    <button id="wikib">Informatii aditionale</button>
+    <div id="drop">
+        <a href="https://ro.wikipedia.org/wiki/Adunare">Adunare</a>
+        <a href="https://ro.wikipedia.org/wiki/Sc%C4%83dere">Scădere</a>
+        <a href="https://ro.wikipedia.org/wiki/%C3%8Enmul%C8%9Bire_(matematic%C4%83)">Înmulțire</a>
+        <a href="https://ro.wikipedia.org/wiki/%C3%8Emp%C4%83r%C8%9Bire_(matematic%C4%83)">Împărțire</a>
+    </div>
+</footer>
+<h1>Notitele tale</h1>
+<div id="notite"></div>
+<script src="A.js"></script>
+</body>
+</html>
